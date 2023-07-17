@@ -68,35 +68,35 @@ public class Main {
         }
         System.out.println("Максимальное значение: " + maxNum);
 
-         */
 
-//        // 5.
-//        Scanner scanner5 = new Scanner(System.in);
-//        System.out.println("Введите число: ");
-//        int num = scanner5.nextInt();
-//
-//        if (num > 0) {
-//            System.out.println("Число положительное");
-//        } else if (num < 0) {
-//            System.out.println("Число отрицательное");
-//        } else {
-//            System.out.println("Число ноль является ни отрицательным, ни положительными");
-//        }
-//
-//        // 6.
-//        String input = "AAA";
-//        String output = getA(input);
-//        System.out.println(output);
-//
-//
-//        // 7.
-//
-//        int[] array = {1, 2, 3, 4, 5};
-//        int sum = 0;
-//        for (int i = 0; i < array.length; i++) {
-//            sum += array[i];
-//        }
-//        System.out.println(sum);
+
+        // 5.
+        Scanner scanner5 = new Scanner(System.in);
+        System.out.println("Введите число: ");
+        int num = scanner5.nextInt();
+
+        if (num > 0) {
+            System.out.println("Число положительное");
+        } else if (num < 0) {
+            System.out.println("Число отрицательное");
+        } else {
+            System.out.println("Число ноль является ни отрицательным, ни положительными");
+        }
+
+        // 6.
+        String input = "AAA";
+        String output = getA(input);
+        System.out.println(output);
+
+
+        // 7.
+
+        int[] array = {1, 2, 3, 4, 5};
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        System.out.println(sum);
 
         // 8.
 
@@ -112,12 +112,25 @@ public class Main {
             }
         }
         System.out.println(secondMax);
+
+         */
+
+        // Доп задачи leetcode
+        // 1. Shuffle String
+
+        String s = "codeleet";
+        int [] indices = {4,5,6,7,0,2,1,3};
+
+        ShuffleString shuffleString = new ShuffleString();
+        String result = shuffleString.restoreString(s, indices);
+        System.out.println(result);
+
+        // 2. Palindrome Number
+
     }
     public static String getA(String input) {
         String aLetter = "AAA";
         input = input.replace(aLetter, "BBB");
         return input;
     }
-
-
 }
